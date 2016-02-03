@@ -8,10 +8,11 @@
  "use strict";
 
  app
-  .factory("demoService", ["$resource", "appSettings",  demoService])
+  .factory("cardDataService", ["$resource", "appSettings",  demoService])
 
 function demoService($resource, appSettings ) {
-  return $resource(appSettings.authServerPath + '/demo/api/path/:id', {}, {
+ // return $resource('http://yugiohprices.com/api/card_data/:id', {}, {
+    return $resource('http://private-anon-71ea0a0bd-yugiohprices.apiary-proxy.com/api/card_data', {}, {
     query: { 
       method: 'GET', 
       isArray: true ,
