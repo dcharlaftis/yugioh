@@ -30,7 +30,5 @@ app.controller("demoController", ['$scope', 'scopeComService', 'cardDataService'
                 console.log("error 2-->", response)
             });
 
-
-
     }
 ]);
