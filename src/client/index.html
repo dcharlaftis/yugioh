@@ -1,0 +1,62 @@
+<!-- 
+* Usage:
+* 1) Rename myModuleName, Demo Title to your choice
+*
+*
+ -->
+<!DOCTYPE html>
+<html ng-app="myModuleName">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Demo Title</title>
+    <link rel="icon" type="img/ico" href="./assets/img/favicon.ico">
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <!--Angular -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <!-- Application itself  -->
+    <script src="app/appModule.js"></script>
+    <script src="app/appConfig.js"></script>
+    <script src="app/appRouter.js"></script>
+    <script src="app/common/config_example.js"></script>
+    <!--Directives-->
+    <script src="app/layout/menuDirective.js"></script>
+    <!--Services-->
+    <script src="app/services/demoService.js"></script>
+    <script src="app/services/scopeComService.js"></script>
+    <!--Controllers-->
+    <script src="app/layout/layoutController.js"></script>
+    <script src="app/controllers/demoController.js"></script>
+    <!--asynchronous loading-->
+    <script>
+    $.ajaxPrefilter(function(options, originalOptions, jqXHR) {
+        options.async = true;
+    });
+    </script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+</head>
+
+<body ng-controller="layoutController">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="well" menu2>
+                        
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="well" ui-view> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+{
+    "name": "yu-gi-oh",
+    "description": "Simple card project",
+    "version": "0.0.0",
+    "dependencies": {
+        "bootstrap": "3.3.5",
+        "angular": "",
+        "angular-ui-router": "",
+        "angular-resource": "",
+        "angular-local-storage": "",
+        "angular-route": ""
+    }
+}
