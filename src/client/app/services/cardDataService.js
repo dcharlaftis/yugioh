@@ -1,18 +1,14 @@
- /*
- *  Usage:
- *  1) rename demoService to your choice
- *  2) rename /demo/api/path/:id to the server's api path *
- *
- */
+
 
  "use strict";
 
  app
-  .factory("cardDataService", ["$resource", "appSettings",  demoService])
+  .factory("cardDataService", ["$resource", cardDataService])
 
-function demoService($resource, appSettings ) {
- // return $resource('http://yugiohprices.com/api/card_data/:id', {}, {
-    return $resource('http://private-anon-71ea0a0bd-yugiohprices.apiary-proxy.com/api/card_data', {}, {
+function cardDataService($resource, appSettings ) {
+  return $resource('http://yugiohprices.com/api/card_data/:id', {}, {
+  //  return $resource('http://private-anon-71ea0a0bd-yugiohprices.apiary-proxy.com/api/card_data', {}, {
+   //  return $resource('http://private-anon-71ea0a0bd-yugiohprices.apiary-mock.com/api/card_data', {}, {
     query: { 
       method: 'GET', 
       isArray: true ,

@@ -1,7 +1,4 @@
-/* Usage:
- *  1) Rename demoController to your choice.
- *  2) Update appRouter with the new controller name 
- */
+
 
 "use strict";
 

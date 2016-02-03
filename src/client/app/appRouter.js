@@ -1,11 +1,4 @@
-/*
-*  Usage:
-*  
-*  1) Change myModuleName to your choice
-*  2) Fill in you own states
-*  3) Update/rename demo states and controllers
-*
-*/
+
 "use strict";
 
 angular.module('myModuleName').config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
