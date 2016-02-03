@@ -1,12 +1,17 @@
 "use strict";
 
-app.controller("demoController", ['$scope', 'scopeComService', 'cardDataService', 'cardImageService',
-    function($scope, scopeComService, cardDataService, cardImageService) {
+app.controller("demoController", ['$http', '$scope', 'scopeComService', 'cardDataService', 'cardImageService',
+    function($http, $scope, scopeComService, cardDataService, cardImageService) {
 
         $scope.cardName = scopeComService.list[0];
         scopeComService.flush();
-        //console.log ("ffcc",$scope.cardName);
+        /*
+        $http.get("http://yugiohprices.com/api/card_data/Reasoning")
+            .then(function(response) {
+                console.log("fffffft", response);
+            });
 
+        */
         //card info
         cardDataService.getOne({
                 id: $scope.cardName
@@ -29,6 +34,7 @@ app.controller("demoController", ['$scope', 'scopeComService', 'cardDataService'
             function(response) {
                 console.log("error 2-->", response)
             });
+
 
     }
 ]);
