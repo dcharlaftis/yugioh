@@ -1,13 +1,17 @@
 <div>
     <div class="row">
-        <h2><b> Card Information</b></h2>
-        <p><b> Card Name:</b> </p>
-        <p> {{cardName}} </p>
-        <p><b> Card Type:</b> </p>
-        <p> {{cardType}} </p>
-        <p><b> Card Description:</b> </p>
-        <p> {{cardDescription}} </p>
-        <p> <b>Card Image:</b> </p>
-        <img ng-src="{{cardPath}}" alt="Image" />
+        <div class="col-md-4">
+            <p> </p>
+            <img ng-src="{{cardPath}}" alt="Image" />
+        </div>
+        <div class="col-md-8">
+            <h2><b> Card Information</b></h2>
+            <p><b> Card Name:</b> </p>
+            <p> {{cardName}} </p>
+            <p><b> Card Type:</b> </p>
+            <p> {{cardType}} </p>
+            <p><b> Card Description:</b> </p>
+            <p> {{cardDescription}} </p>
+        </div>
     </div>
 </div>
