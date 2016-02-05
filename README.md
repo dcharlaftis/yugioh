@@ -48,5 +48,7 @@ which sends the card name. Then a controller (demo controller) uses this card na
 card image service to make http calls to the server api.
 The responses are presented in the demoView.html.
 
-Note: CORS issues may be met by the browser. (use F12 for debug)
+NOTE: 
+
+CORS issues may be met by the browser (use F12 for debug).
 

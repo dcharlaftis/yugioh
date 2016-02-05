@@ -3,10 +3,10 @@
  "use strict";
 
  app
-  .factory("cardDataService", ["$resource", cardDataService])
+  .factory("cardDataService", ["$resource", "appSettings", cardDataService])
 
-function cardDataService($resource ) {
-  return $resource('http://yugiohprices.com/api/card_data/:id', {}, {
+function cardDataService($resource, appSettings ) {
+  return $resource(appSettings.serverPath + 'card_data/:id', {}, {
      
     getOne: {
       method: 'GET',

@@ -2,10 +2,10 @@
  "use strict";
 
  app
-  .factory("cardImageService", ["$resource", cardImageService])
+  .factory("cardImageService", ["$resource", "appSettings", cardImageService])
 
-function cardImageService($resource ) {
-  return $resource('http://yugiohprices.com/api/card_image/:id', {}, {
+function cardImageService($resource, appSettings ) {
+  return $resource(appSettings.serverPath + 'card_image/:id', {}, {
      
     getOne: {
       method: 'GET',
