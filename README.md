@@ -46,7 +46,7 @@
  	$http-server
  ```
 
-7) In your browser, run http://localhost:8080 
+8) In your browser, run http://localhost:8080 
 
 ## Development Notes
 
