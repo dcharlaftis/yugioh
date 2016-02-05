@@ -38,9 +38,7 @@
  	$http-server
  ```
 
-7) Use your browser  
-
-    In your browser, run http://localhost:8080 
+7) In your browser, run http://localhost:8080 
 
 ## Development Notes
 
@@ -50,6 +48,5 @@ which sends the card name. Then a controller (demo controller) uses this card na
 card image service to make http calls to the server api.
 The responses are presented in the demoView.html.
 
-Note 1) CORS issues may be met by the browser. (use F12 for debug)
+Note: CORS issues may be met by the browser. (use F12 for debug)
 
-Note2) config folder is a demo one, do not bother testing it
