@@ -5,6 +5,7 @@ app.controller("demoController", ['$http', '$scope', 'scopeComService', 'cardDat
 
         $scope.cardName = scopeComService.list[0];
         scopeComService.flush();
+        $scope.cardPath= "http://yugiohprices.com/api/card_image/" + $scope.cardName;
         /*
         $http.get("http://yugiohprices.com/api/card_data/Reasoning")
             .then(function(response) {
@@ -16,7 +17,6 @@ app.controller("demoController", ['$http', '$scope', 'scopeComService', 'cardDat
         cardDataService.getOne({
                 id: $scope.cardName
             }, function(response) {
-                console.log("rrr", response);
                 $scope.cardType = response.data.card_type;
                 $scope.cardDescription = response.data.text;
             },
@@ -27,8 +27,7 @@ app.controller("demoController", ['$http', '$scope', 'scopeComService', 'cardDat
         //card image
         cardImageService.getOne({
                 id: $scope.cardName
-            }, function(response) {
-                console.log("imm", response);
+            }, function(response) {               
                 $scope.cardImage = response;
             },
             function(response) {
