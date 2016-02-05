@@ -51,4 +51,8 @@ The responses are presented in the demoView.html.
 NOTE: 
 
 CORS issues may be met by the browser (use F12 for debug).
+In Chrome, you should install Allow-Control-Allow-Origin plugin
+(https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi)
+
+
 
