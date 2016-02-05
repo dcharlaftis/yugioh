@@ -1,5 +1,7 @@
 # Yugioh cards
 
+A demo Angularjs project.
+
 ## Installation
 
 1) install nodejs  
