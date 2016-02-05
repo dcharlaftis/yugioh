@@ -31,10 +31,18 @@
  	$npm install http-server -g
  ```
 
-6) run http server
+6) build project
+```javascript
+ 	$cd ./src/client
+ 	$gulp phase1
+ 	$gulp phase2
+ 	$gulp phase3
+ ```
+
+7) run http server
 
  ```javascript
-    $cd ./src/client
+    $cd ./src/client/dist
  	$http-server
  ```
 
